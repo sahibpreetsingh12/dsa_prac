@@ -62,4 +62,33 @@ class Solution:
 sol = Solution()
 sol.rotate(k=788,nums=[1,2,3,4,5,6,7])
 
+"""
+
+Intuition
+    The problem requires rotating an array nums to the right by k steps. One intuitive approach is to understand that rotating by k steps is equivalent to moving the last k elements to the front of the array.
+
+Approach
+    1.Take modulo k with the length of the array to handle cases where k is larger than the length of the array, as rotating by the length of the array or its multiples will result in the same array.
+    2.Slice the array by taking the last k elements and concatenate them with the remaining elements of the array.
+
+Complexity
+    Time complexity:
+        Time complexity: O(n) wheren is the length of the array nums. Slicing and concatenation operations take O(n) time.
+
+    Space complexity:
+        Space complexity: O(n) for the space used by the sliced portion of the array
+
+
+Solution that beats 94% users in python below
+
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
         
+        a=k%len(nums)
+        nums[:]=nums[-a:]+nums[:-a]
+        print(nums)
+
+        
+sol = Solution()
+sol.rotate(k=3,nums=[1,2,3,4,5,6,7])
+"""
