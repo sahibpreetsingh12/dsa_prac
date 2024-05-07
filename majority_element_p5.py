@@ -48,6 +48,12 @@ class Solution:
 """
 O(nlogn) since sorting of array takes O(nlogn)
 
+Intuition - The intuition behind this approach is that if an 
+element occurs more than n/2 times in the array (where n is the size of the array), 
+it will always occupy the middle position when the array is sorted. Therefore, 
+we can sort the array and return the element at index n/2.
+
+Solution-  https://shorturl.at/cdixY
 """
 
 class Solution:
@@ -55,4 +61,7 @@ class Solution:
         nums.sort()
         n = len(nums)
         return nums[n//2]
+    
+sol = Solution()
+sol.majorityElement(nums = [3,2,3])
     
