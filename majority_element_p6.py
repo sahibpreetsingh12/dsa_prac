@@ -49,3 +49,9 @@ class Solution:
 
 sol = Solution()
 print(sol.majorityElement(nums = [3,2,3]))
+
+
+"""
+Next challenge is to solve in constant time complexity -> O(1)
+
+"""
