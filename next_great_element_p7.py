@@ -4,7 +4,7 @@ class Solution:
 
         if len(set(nums))==1:
             return -1
-        else:
-            pass
+        elif list(nums)[0]==max(list(nums)):
+            return -1
 sol = Solution()
 print(sol.nextGreaterElement(11))
