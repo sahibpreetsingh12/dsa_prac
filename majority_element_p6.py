@@ -45,7 +45,6 @@ class Solution:
         if final_ele:
             return final_ele
         else:
-
             return ele
 
 sol = Solution()
