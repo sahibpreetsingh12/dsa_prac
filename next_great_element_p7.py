@@ -10,5 +10,7 @@ class Solution:
         #than return -1
         elif list(nums)[0]==max(list(nums)): 
             return -1
+        else:
+            return int(''.join(sorted(list(nums),reverse=True)))
 sol = Solution()
-print(sol.nextGreaterElement(11))
+print(sol.nextGreaterElement(2147483647))
