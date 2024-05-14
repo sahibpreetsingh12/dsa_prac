@@ -11,6 +11,7 @@ class Solution:
         
         #if the one's element in the number is the highest in the entire number
         # #than return -1
+
         
         elif (list(nums)[0]==max(list(nums))) and (list(nums)[0]!=list(nums)[-1]): 
             return -1
