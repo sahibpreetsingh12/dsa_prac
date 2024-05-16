@@ -19,7 +19,6 @@ class Solution:
             perms = permutations(nums)
             # Join each permutation to form strings
             combinations = map(''.join, perms)
-
             combinations = sorted([int(i) for i in combinations])
 
             ele = n
